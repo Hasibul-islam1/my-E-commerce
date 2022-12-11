@@ -1,0 +1,79 @@
+<%-include("main");-%>
+<%-include("header");-%>
+<%-include("nevber");-%>
+<!---breadcrums start -->
+<div class="container py-4 flex items-center gap-3">
+    <a href="/" class="text-primary text-base">
+        <i class='bx bxs-home-circle'></i>
+    </a>
+    <span class="text-sm text-gray-600 ">
+        <i class='bx bx-chevrons-right'></i>
+    </span>
+    <p class="font-medium text-gray-500 uppercase">contact us</p>
+    </div>
+    <!---breadcrms end -->
+    <!--contact start -->
+    <div class="container pt-4 pb-16">
+        <div class="mb-8">
+            <h3 class="font-bold leading-loose text-2xl border-b-2 border-yellow-500 inline-block">FOLLOW ME ON MAP</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13852.778157282008!2d90.75253911894573!3d23.129036214952194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754e564b50227f7%3A0x8b1003dab28f1d98!2sFaridganj%20Bazar%20Road!5e0!3m2!1sen!2sbd!4v1670776795476!5m2!1sen!2sbd" class="mt-5 w-full" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-20">
+            <div class="col-span-2">
+            <div class="mt-8">
+                <h3 class="font-bold leading-loose text-2xl border-b-2 border-yellow-500 inline-block">SEND ME A MESSAGE</h3>
+            </div>
+            <div class="space-y-6">
+            <form action="">
+                <div class="grid grid-cols-2 gap-6 mt-4 mb-3">
+                    <div>
+                        <label for="text" class="text-gray-600 mb-2 block ">First Name</label>
+                         <input type="text" class="w-full block border border-gray-300 px-4 py-3 text-gray-500 trxt-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0" placeholder="fast name">
+                    </div>
+                    <div>
+                        <label for="text" class="text-gray-600 mb-2 block ">Last Name</label>
+                         <input type="text" class="w-full block border border-gray-300 px-4 py-3 text-gray-500 trxt-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0" placeholder="last name">
+                    </div>
+                </div>
+                <div>
+                    <label for="text" class="text-gray-600 mb-2 block ">Email</label>
+                     <input type="text" class="w-full block border border-gray-300 px-4 py-3 text-gray-500 trxt-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0" placeholder="example@mail.com">
+                </div>
+                <div class="mt-5 mb-5">
+                    <label for="text" class="text-gray-600 mb-2 block ">Messages </label>
+                     <textarea type="email" class="w-full h-40 block resize-none border border-gray-300 px-4 py-3 text-gray-500 trxt-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0"placeholder="messages"></textarea>
+                </div>
+            </form>
+            </div>
+            <button type="submit" class="w-full h-12 border border-gray-600 bg-gray-800 hover:bg-transparent hover:text-gray-800 px-7 rounded text-sm text-white font-medium duration-200">Send Message</button>
+        </div>
+        <!-- address start -->
+        <div>
+            <div class="mt-8">
+                <h3 class="font-bold leading-loose text-2xl border-b-2 border-yellow-500 inline-block">SEND ME A MESSAGE</h3>
+            </div>
+            <div>
+                <ul>
+                    <li class="text-gray-500 mb-4 mt-4">
+                        <span class="inline-block text-black"><i class='bx bxs-location-plus'></i></span>
+                        <span class="ml-3 text-gray-600">1205 Central Road,Dhaka Bnagladesh</span>
+                    </li>
+                    <li class="text-gray-500 mb-4 mt-4">
+                        <span class="inline-block text-black"><i class='bx bxs-phone-call'></i></span>
+                        <span class="ml-3 text-gray-600">+566 477 256, +566 254 575</span>
+                    </li>
+                    <li class="text-gray-500 mb-4 mt-4">
+                        <span class="inline-block text-black"><i class='bx bxs-envelope'></i></span>
+                        <span class="ml-3 text-gray-600">info@RAFCART.com</span>
+                    </li>
+                    <li class="text-gray-500 mb-4 mt-4">
+                        <span class="inline-block text-black"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-clock w-4 h-4" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path></svg></span>
+                        <span class="ml-3 text-gray-600">Open Time: 10:00AM - 12:00PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- address end  -->
+        </div>
+    </div>
+    <%-include("footer");-%>

@@ -1,0 +1,70 @@
+<%- include("main");-%>
+<%- include("header"); -%>
+<%- include("nevber");-%>
+<!---breadcrums start -->
+<div class="container py-4 flex items-center gap-3">
+    <a href="/" class="text-primary text-base">
+        <i class='bx bxs-home-circle'></i>
+    </a>
+    <span class="text-sm text-gray-600 ">
+        <i class='bx bx-chevrons-right'></i>
+    </span>
+    <p class="font-medium text-gray-500 ">Register</p>
+    </div>
+    <!---breadcrms end -->
+    <!--login start -->
+    <div class="container py-16">
+    <div class="max-w-lg mx-auto shadow px-6 py-7 overflow-hidden">
+        <h2 class=" text-2xl uppercase mb-1 font-semibold">CREATE AN ACOCUNT</h2>
+        <p class="text-gray-600 mb-6 text-sm">Register here if you don't have account</p>
+        <form action="">
+            <div class="space-y-4">
+                <div>
+                    <label for="text" class="text-gray-700 mb-2 block font-medium">Full Name<span class="text-primary">*</span></label>
+                    <input type="text" class="block w-full py-3 px-4 border border-gray-300 text-gray-600 text-sm rounded focus:ring-0 focus:border-black placeholder-gray-500 " placeholder="John Doe">
+                  
+                </div>
+            <div>
+                <label for="email" class="text-gray-700 mb-2 block font-medium">Email Address <span class="text-primary">*</span></label>
+                <input type="email" class="block w-full py-3 px-4 border border-gray-300 text-gray-600 text-sm rounded focus:ring-0 focus:border-black placeholder-gray-500 " placeholder="example@mail.com">
+            </div>
+            <div>
+                <label for="Password" class="text-gray-700 mb-2 block font-medium">Password<span class="text-primary">*</span></label>
+                <input type="password" class="block w-full py-3 px-4 border border-gray-300 text-gray-600 text-sm rounded focus:ring-0 focus:border-black placeholder-gray-500 " placeholder="type password">
+            </div>
+            <div>
+                <label for="Password" class="text-gray-700 mb-2 block font-medium">Confirm Password<span class="text-primary">*</span></label>
+                <input type="password" class="block w-full py-3 px-4 border border-gray-300 text-gray-600 text-sm rounded focus:ring-0 focus:border-black placeholder-gray-500 " placeholder="Confirm password">
+            </div>
+        </div>
+        <div class="flex items-center justify-start mt-6">
+            <div class="flex items-center">
+            <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+            <label for="agreement" class="text-gray-600 ml-3 cursor-pointer">I have read and agree to the</label>
+            </div>
+            <a href="#" class="text-primary ml-1">terms & conditions</a>
+        </div>
+        <div class="mt-4">
+            <button type="submit" class="w-full block py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-semibold">create account</button>
+        </div>
+        </form>
+        <div class="mt-6 flex justify-center relative">
+            <div class="text-gray-600 uppercase px-3 bg-white z-10 relative">
+                OR SINGUP IN WITH 
+            </div>
+            <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200 ">
+            </div>
+        </div>
+        <div class="flex mt-4 gap-4">
+            <a href="#" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-medium text-sm hover:bg-blue-700">facebook</a>
+            <a href="#" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-medium text-sm hover:bg-yellow-700">Google</a>
+        </div>
+        <div class=" mt-4 text-gray-600 text-center">
+            <p>
+                Already have an account?<a href="/login" class="text-primary">Login Now</a> 
+            </p>
+        </div>
+    </div>
+    </div>
+    <!--login end-->
+<%-include("footer");-%>

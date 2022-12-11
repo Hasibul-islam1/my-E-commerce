@@ -1,0 +1,519 @@
+<%- include("main");-%>
+<%- include("header"); -%>
+<%- include("nevber");-%>
+<!---breadcrums start -->
+<div class="container py-4 flex items-center gap-3">
+<a href="/" class="text-primary text-base">
+    <i class='bx bxs-home-circle'></i>
+</a>
+<span class="text-sm text-gray-600 ">
+    <i class='bx bx-chevrons-right'></i>
+</span>
+<p class="font-medium text-gray-500 ">Shop</p>
+</div>
+<!---breadcrms end -->
+<!---shop wrapper start --->
+<div class="container grid lg:grid-cols-4 md:grid-cols-2 gap-6 pt-4 pb-16 ">
+    <!--sidebar start -->
+    <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+        <div class="divide-y divide-gray-200 space-y-5 relative">
+            <!--category start -->
+            <div>
+                <h3 class="text-gray-800 text-xl mb-3 uppercase font-medium">Categories</h3>
+            <div class="space-y-2">
+
+            </div>
+                <!--single category stort -->
+                <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(30)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+                  <!--single category stort -->
+                  <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Sofa</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(50)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+                  <!--single category stort -->
+                  <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Door</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(20)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+                  <!--single category stort -->
+                  <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">table</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(45)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+            </div>
+            <!---category end -->
+        
+             <!--category part -2 start -->
+             <div class="pt-4">
+                <h3 class="text-gray-800 text-xl mb-3 uppercase font-medium">Brands</h3>
+            <div class="space-y-2">
+
+            </div>
+                <!--single category stort -->
+                <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Dominik</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(15)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+                  <!--single category stort -->
+                  <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Karl</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(22)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+                  <!--single category stort -->
+                  <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Maxing</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(20)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+                  <!--single category stort -->
+                  <div class=" flex items-center">
+                    <input type="checkbox" name="" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                    <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Ernest</label>
+                    <div class="ml-auto text-gray-500 text-sm ">
+                        <p>(34)</p>
+                    </div>
+                </div>
+                <!---single category end -->
+            </div>
+            <!---category part-2 end -->
+            <!--price part start -->
+            <div class="pt-4">
+                <h3 class="text-gray-800 text-xl mb-3 uppercase font-medium">Price</h3>
+                <div class="mt-4 flex items-center">
+                    <input type="text" class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"placeholder="min">
+                    <span class="mx-3 text-gray-500">-</span>
+                    <input type="text" class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"placeholder="max">
+                </div>
+            </div>
+            <!--price part end -->
+            <!---size part start -->
+            <div class="pt-4">
+                <h3 class="text-gray-800 text-xl mb-3 uppercase font-medium">Size</h3>
+                <div class="flex items-center gap-2">
+                    <!--single size start -->
+                    <div class="size-selector">
+                        <input type="text" name="size" class="hidden" id="size-xs">
+                        <label for="size-xs" class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">XS</label>
+                    </div>
+                    <!--single size end -->
+                     <!--single size start -->
+                     <div class="size-selector">
+                        <input type="checkbox"name="size"class="hidden" id="size-s">
+                        <label for="size-s" class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">S</label>
+                    </div>
+                    <!--single size end -->
+                       <!--single size start -->
+                       <div class="size-selector">
+                        <input type="checkbox"name="size"class="hidden" id="size-M">
+                        <label for="size-M" class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">M</label>
+                    </div>
+                    <!--single size end -->
+                       <!--single size start -->
+                       <div class="size-selector">
+                        <input type="checkbox"name="size"class="hidden" id="size-L">
+                        <label for="size-L" class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">L</label>
+                    </div>
+                    <!--single size end -->
+                       <!--single size start -->
+                       <div class="size-selector">
+                        <input type="checkbox"name="size"class="hidden" id="size-Xl">
+                        <label for="size-Xl" class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">Xl</label>
+                    </div>
+                    <!--single size end -->
+                       <!--single size start -->
+                       <div class="size-selector">
+                        <input type="checkbox"name="size"class="hidden" id="size-XXl">
+                        <label for="size-XXl" class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">XXl</label>
+                    </div>
+                    <!--single size end -->
+                </div>
+            </div>
+            <!--size part end -->
+            <!--color part stert -->
+            <div class="pt-4">
+                <h3 class="text-gray-800 text-xl mb-3 uppercase font-medium">color</h3>
+             <div class="flex items-start gap-2">
+            <!--single start -->
+                    <input type="radio"name="color"class="hidden" id="color-red">
+                    <label for="color-red" class="text-sm border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow bg-red-600"></label>
+            <!----single color end -->
+             <!--single start -->
+             <input type="radio"name="color"class="hidden" id="color-pink">
+             <label for="color-pink" class="text-sm border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow bg-pink-400"></label>
+             <!----single color end -->
+              <!--single start -->
+              <input type="radio"name="color"class="hidden" id="color-black">
+              <label for="color-black" class="text-sm border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow bg-black"></label>
+      <!----single color end -->
+                 <!--single start -->
+                 <input type="radio"name="color"class="hidden" id="color-skyblue">
+                 <label for="color-skyblue" class="text-sm border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow bg-sky-400"></label>
+         <!----single color end -->
+          <!--single start -->
+          <input type="radio"name="color"class="hidden" id="color-yellow">
+          <label for="color-yellow" class="text-sm border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow bg-yellow-400"></label>
+          <!----single color end -->
+                 <!--single start -->
+                 <input type="radio"name="color"class="hidden" id="color-purpul">
+                 <label for="color-purpul" class="text-sm border border-gray-200 rounded-sm h-5 w-5 flex items-center justify-center cursor-pointer shadow bg-purple-600"></label>
+         <!----single color end -->
+            </div>
+            </div>
+            <!---color part end -->
+        </div>                       
+    </div>
+    <!--sidebar end-->
+     <!-- product part start  -->
+     
+   <div class="col-span-3">
+    <div class="flex items-center mb-2">
+    <!-- select part start  -->
+    <div class="flex items-center">
+        <div class="mb-3 xl:w-96">
+          <select class="form-select appearance-none
+            block
+            w-60
+            px-4
+            py-3
+            text-sm
+            font-normal
+            text-gray-600
+            bg-white bg-clip-padding bg-no-repeat
+            border border-solid border-gray-300
+            rounded
+            shadow-sm
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-primary focus:ring-primary focus:outline-none" aria-label="Default select example">
+              <option selected>Default sorting</option>
+              <option value="1">Price low-high</option>
+              <option value="2">Price high-low</option>
+              <option value="3">Latest product</option>
+              <option value="4">Gift</option>
+          </select>
+        </div>
+      </div>
+    <!-- select part end  -->
+    <!--2 box part start -->
+    <div class="flex gap-2 ml-auto">
+        <div class="border border-primary w-10 h-9 flex items-center justify-center text-white bg-primary rounded cursor-pointer">
+            <i class='bx bx-grid'></i>
+        </div>
+        <div class="border border-gray-500 w-10 h-9 flex items-center justify-center text-gray-600 rounded cursor-pointer">
+            <i class='bx bx-list-ul'></i>
+        </div>
+        </div>
+        <!--2 box part end -->
+        </div>
+        <!-- product part end -->
+      
+<!----------------------------product part view  ------------------------------------->
+<div class="grid grid-cols-3 gap-6">
+    <!--single product start -->
+    <div class="bg-white shadow rounded overflow-hidden group">
+      <!--product images start -->
+    <div class="relative">
+      <h2 class=" absolute bg-green-600 text-white py-2 px-2 rounded-md left-0 top-0">25%</h2>
+      <div class="w-full h-[258px]">
+        <img src="images/grid-img/laptop-3.png" alt="" class="w-full">
+      </div>
+      <div class="absolute inset-0 hover:bg-black hover:bg-opacity-40 flex items-center justify-center  gap-2 opacity-0 group-hover:opacity-100">
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-search-alt-2'></i>
+        </a>
+
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-heart'></i>
+        </a>
+        
+      </div>
+      
+    </div>
+    <!--product imgages end -->
+    <!--product content start -->
+      <div class="pt-4 pb4 px-4">
+        <a href="#">
+          <h4 class="font-semibold text-lg mb-2 text-gray-800 hover:text-primary transition">HP Pavilion 15</h4>
+        </a>
+        <p class="font-medium text-base mb-2 text-[#464545]">Intel® Core™ i5-1235U </p>
+        <p class=" font-extrabold text-primary text-xl mb-2">$120.00</p>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-yellow-400 text-sm">
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star-half'></i></span>
+          </div>
+          <div class="text-xs text-gray-600 ml-3">(190)</div>
+        </div>
+       
+      </div>
+    <!--product content end -->
+    <a href="#" class=" uppercase block mt-3 py-1 w-full text-center text-white rounded-b bg-primary border border-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+  </div>
+    <!--single product end -->
+
+     <!--single product start -->
+     <div class="bg-white shadow rounded overflow-hidden group">
+      <!--product images start -->
+    <div class="relative">
+      <div class=" w-full h-[258px]">
+        <img src="images/grid-img/laptop-2.png" alt="" class="w-full">
+      </div>
+      <div class="absolute inset-0 hover:bg-black hover:bg-opacity-40 flex items-center justify-center  gap-2 opacity-0 group-hover:opacity-100">
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-search-alt-2'></i>
+        </a>
+
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-heart'></i>
+        </a>
+        
+      </div>
+      
+    </div>
+    <!--product imgages end -->
+    <!--product content start -->
+      <div class="pt-4 pb4 px-4">
+        <a href="#">
+          <h4 class="font-semibold text-lg mb-2 text-gray-800 hover:text-primary transition">HP Omen 13</h4>
+        </a>
+        <p class="font-medium text-base mb-2 text-[#464545]">Intel® Core™ i7 processor</p>
+        <p class=" font-extrabold text-primary text-xl mb-2">$300.00</p>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-yellow-400 text-sm">
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bx-star'></i></span>
+          </div>
+          <div class="text-xs text-gray-600 ml-3">(220)</div>
+        </div>
+       
+      </div>
+    <!--product content end -->
+    <a href="#" class=" uppercase block mt-3 py-1 w-full text-center text-white rounded-b bg-primary border border-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+  </div>
+    <!--single product end -->
+
+     <!--single product start -->
+     <div class="bg-white shadow rounded overflow-hidden group">
+      <!--product images start -->
+    <div class="relative">
+      <h2 class=" absolute bg-black text-white py-2 px-2 rounded-md left-0 top-0">HOT</h2>
+      <div class="w-full h-[258px]">
+        <img src="images/grid-img/headphone-2.png" alt="" class="w-full h-full">
+      </div>
+      <div class="absolute inset-0 hover:bg-black hover:bg-opacity-40 flex items-center justify-center  gap-2 opacity-0 group-hover:opacity-100">
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-search-alt-2'></i>
+        </a>
+
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-heart'></i>
+        </a>
+        
+      </div>
+      
+    </div>
+    <!--product imgages end -->
+    <!--product content start -->
+      <div class="pt-4 pb4 px-4">
+        <a href="#">
+          <h4 class="font-semibold text-lg mb-2 text-gray-800 hover:text-primary transition">Bose Headphone</h4>
+        </a>
+        <p class="font-medium text-base mb-2 text-[#464545]">High Quality Headphone</p>
+        <p class=" font-extrabold text-primary text-xl mb-2">$160.00</p>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-yellow-400 text-sm">
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+          </div>
+          <div class="text-xs text-gray-600 ml-3">(100)</div>
+        </div>
+       
+      </div>
+    <!--product content end -->
+    <a href="#" class=" uppercase block mt-3 py-1 w-full text-center text-white rounded-b bg-primary border border-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+  </div>
+    <!--single product end -->
+
+     <!--single product start -->
+     <div class="bg-white shadow rounded overflow-hidden group">
+      <!--product images start -->
+    <div class="relative">
+      <div class="w-full h-[258px]">
+        <img src="images/grid-img/phone-1.png" alt="" class="w-full">
+      </div>
+      <div class="absolute inset-0 hover:bg-black hover:bg-opacity-40 flex items-center justify-center  gap-2 opacity-0 group-hover:opacity-100">
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-search-alt-2'></i>
+        </a>
+
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+          <i class='bx bx-heart'></i>
+        </a>
+        
+      </div>
+      
+    </div>
+    <!--product imgages end -->
+    <!--product content start -->
+      <div class="pt-4 pb4 px-4">
+        <a href="#">
+          <h4 class="font-semibold text-lg mb-2 text-gray-800 hover:text-primary transition">Xiaomi Note 7 Pro</h4>
+        </a>
+        <p class="font-medium text-base mb-2 text-[#464545]">Xiaomi Best Phone Now
+        </p>
+        <p class=" font-extrabold text-primary text-xl mb-2">$200.00</p>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-yellow-400 text-sm">
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star'></i></span>
+            <span><i class='bx bxs-star-half'></i></span>
+          </div>
+          <div class="text-xs text-gray-600 ml-3">(130)</div>
+        </div>
+       
+      </div>
+    <!--product content end -->
+    <a href="#" class=" uppercase block mt-3 py-1 w-full text-center text-white rounded-b bg-primary border border-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+  </div>
+    <!--single product end -->
+
+     <!--single product start -->
+     <div class="bg-white shadow rounded overflow-hidden group">
+        <!--product images start -->
+      <div class="relative">
+        <div class="w-full h-[258px]">
+          <img src="images/grid-img/shoes-3.png" alt="" class="w-full">
+        </div>
+        <div class="absolute inset-0 hover:bg-black hover:bg-opacity-40 flex items-center justify-center  gap-2 opacity-0 group-hover:opacity-100">
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+            <i class='bx bx-search-alt-2'></i>
+          </a>
+  
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+            <i class='bx bx-heart'></i>
+          </a>
+          
+        </div>
+        
+      </div>
+      <!--product imgages end -->
+      <!--product content start -->
+        <div class="pt-4 pb4 px-4">
+          <a href="#">
+            <h4 class="font-semibold text-lg mb-2 text-gray-800 hover:text-primary transition">Women High Shoes</h4>
+          </a>
+          <p class="font-medium text-base mb-2 text-[#464545]">Adidas Women Shoes
+          </p>
+          <p class=" font-extrabold text-primary text-xl mb-2">$100.00</p>
+          <div class="flex items-center">
+            <div class="flex gap-1 text-yellow-400 text-sm">
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star-half'></i></span>
+            </div>
+            <div class="text-xs text-gray-600 ml-3">(130)</div>
+          </div>
+         
+        </div>
+      <!--product content end -->
+      <a href="#" class=" uppercase block mt-3 py-1 w-full text-center text-white rounded-b bg-primary border border-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+    </div>
+      <!--single product end -->
+
+       <!--single product start -->
+     <div class="bg-white shadow rounded overflow-hidden group">
+        <!--product images start -->
+      <div class="relative">
+        <div class="w-full h-[258px] overflow-hidden">
+          <img src="images/grid-img/headphone-3.png" alt="" class="w-full">
+        </div>
+
+        <div class="absolute inset-0 hover:bg-black hover:bg-opacity-40 flex items-center justify-center  gap-2 opacity-0 group-hover:opacity-100">
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+            <i class='bx bx-search-alt-2'></i>
+          </a>
+  
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition ">
+            <i class='bx bx-heart'></i>
+          </a>
+          
+        </div>
+        
+      </div>
+      <!--product imgages end -->
+      <!--product content start -->
+        <div class="pt-4 pb4 px-4">
+          <a href="#">
+            <h4 class="font-semibold text-lg mb-2 text-gray-800 hover:text-primary transition">COWIN E7 Active</h4>
+          </a>
+          <p class="font-medium text-base mb-2 text-[#464545]"> Now Best Headphone
+          </p>
+          <p class=" font-extrabold text-primary text-xl mb-2">$190.00</p>
+          <div class="flex items-center">
+            <div class="flex gap-1 text-yellow-400 text-sm">
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star'></i></span>
+              <span><i class='bx bxs-star-half'></i></span>
+            </div>
+            <div class="text-xs text-gray-600 ml-3">(130)</div>
+          </div>
+         
+        </div>
+      <!--product content end -->
+      <a href="#" class=" uppercase block mt-3 py-1 w-full text-center text-white rounded-b bg-primary border border-primary hover:bg-transparent hover:text-primary transition">Add to cart</a>
+    </div>
+      <!--single product end -->
+
+  </div>
+    </div>
+    
+    
+</div>
+<!---shop wrapper end -->
+<%-include("footer");-%>
